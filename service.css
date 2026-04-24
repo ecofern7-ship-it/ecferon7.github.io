@@ -268,9 +268,10 @@ nav {
 
 
 .stats__image img {
-  max-width: 450px;
-  margin: auto;
-  border-radius: 5px;
+  width: 100%;        /* ให้เต็มกรอบ */
+  height: 280px;      /* กำหนดความสูงเท่ากัน */
+  object-fit: cover;  /* ครอปรูปไม่ให้บิด */
+  border-radius: 8px; /* มุมโค้งเล็กน้อย */
 }
 
 
@@ -321,11 +322,13 @@ nav {
   gap: 2rem;
 }
 
-.painting__image img {
-  max-width: 450px;
-  margin: auto;
-  border-radius: 5px;
+.painting__image img {      
+  width: 100%;        /* ให้เต็มกรอบ */
+  height: 300px;      /* กำหนดความสูงเท่ากัน */
+  object-fit: cover;  /* ครอปรูปไม่ให้บิด */
+  border-radius: 8px; /* มุมโค้งเล็กน้อย */
 }
+
 
 .painting1 {
   background-color: var(--secondary-color-light);
@@ -372,9 +375,10 @@ nav {
 }
 
 .painting__image1 img {
-  max-width: 450px;
-  margin: auto;
-  border-radius: 5px;
+  width: 100%;        /* ให้เต็มกรอบ */
+  height: 250px;      /* กำหนดความสูงเท่ากัน */
+  object-fit: cover;  /* ครอปรูปไม่ให้บิด */
+  border-radius: 8px; /* มุมโค้งเล็กน้อย */
 }
 
 .painting2 {
@@ -422,9 +426,10 @@ nav {
 }
 
 .painting__image2 img {
-  max-width: 450px;
-  margin: auto;
-  border-radius: 5px;
+  width: 100%;        /* ให้เต็มกรอบ */
+  height: 250px;      /* กำหนดความสูงเท่ากัน */
+  object-fit: cover;  /* ครอปรูปไม่ให้บิด */
+  border-radius: 8px; /* มุมโค้งเล็กน้อย */
 }
 
 
@@ -588,6 +593,8 @@ nav {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
+
+  
 
     .painting__container {
     grid-template-columns: repeat(1, 1fr);
