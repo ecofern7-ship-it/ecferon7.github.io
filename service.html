@@ -16,6 +16,11 @@
     <link rel="icon" href="assets/Logo-VSC.png">
   </head>
   <body>
+
+    <button id="scrollTopBtn">
+  <i class="ri-arrow-up-line"></i>
+  </button>
+
     <header>
       <div class="nav-wrapper">
   <nav>
@@ -194,7 +199,7 @@
     <div class="painting__image1">
       <img src="assets/imge015.jpg" alt="stats" />
       <img src="assets/imge017.jpg" alt="stats" />
-      <img src="assets/imge016.png" alt="stats" />
+      <!-- <img src="assets/imge016.png" alt="stats" /> -->
     </div>
   </div>
 </section>
@@ -285,5 +290,23 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="service.js"></script>
+    <script>
+  const btn = document.getElementById("scrollTopBtn");
+
+  window.onscroll = function () {
+  if (document.documentElement.scrollTop > 200) {
+  btn.style.display = "flex";
+  } else {
+  btn.style.display = "none";
+  }
+  };
+
+  btn.onclick = function () {
+  window.scrollTo({
+  top: 0,
+  behavior: "smooth"
+  });
+  };
+  </script>
   </body>
 </html>
